@@ -1,0 +1,183 @@
+*{
+ margin: 0%;
+ padding: 0%;
+}
+.nv{
+ background-image: url(https://wallpapercave.com/wp/wp7603919.jpg);
+ width: 100%;
+ height: 700px;
+}
+.nv nav{
+ display: flex;
+ justify-content: center;
+ justify-content: space-around;
+ font-size: 44px;
+ color:pink
+}
+.nv nav .right{
+ display: flex;
+}
+nav p{
+ margin-inline: 30px;
+ margin-top: 20px;
+}
+nav p:hover{
+  text-decoration: underline;
+}
+.logo img{
+ width: 40%;
+ height: 400px;
+ 
+}
+.nv .logo{
+ text-align: center;
+}
+.nv .text{
+ text-align: center;
+ color: white;
+ margin-top: 5px;
+ font-size: 25px;
+ text-shadow: 5px 5px 4px blue;
+}
+.nv .input{
+ text-align: center;
+ margin-top: 60px;
+ 
+}
+.input>input{
+  width: 400px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.input>input:hover{
+  cursor: pointer;
+  background-color: rgb(234, 90, 90);
+  color: white;
+}
+.input>input:hover::placeholder{
+ color: #fff;
+}
+.card{
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ justify-content: space-around;
+ gap: 20px;
+}
+.card .crd img{
+ width: 400px;
+ height: 350px;
+ border-radius: 6px;
+ margin-top: 55px;
+}
+.crd p{
+ font-size: 20px;
+}
+.coll .txt{
+ margin-left: 34px;
+ margin-top: 64px;
+ padding: 33px;
+}
+.txt p{
+ font-size: 20px;
+}
+.coll .rest{
+ display: flex;
+ margin: 0px;
+ background-color: rgb(211, 96, 115);
+}
+.rest img{
+ width: 400px;
+ height: 360px;
+ border-radius: 7px;
+ padding-left: 50px;
+ margin: 0px;
+ margin-top: 40px;
+}
+.rest>img{
+  border-radius: 10px;
+}
+.app{
+ display: flex;
+ justify-content: center;
+ justify-content: space-around;
+ background-color: rgb(233, 197, 203);
+ margin-top: 60px;
+}
+.app img{
+ width: 40%;
+}
+.app h1{
+ margin-top: 190px;
+ font-size: 99px;
+ text-shadow: 3px 3px 4px blue;
+}
+.btn h1{
+ margin-left: 44px;
+ margin-top: 44px;
+ padding: 33px;
+}
+.btn button{
+ width: 80%;
+ height: 50px;
+ background-color: white;
+ border: 1px solid gray;
+ border-radius: 5px;
+ margin-top: 22px;
+ margin-left: 200px;
+ font-size: 28px;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ text-shadow: 3px 3px 8px rgb(239, 131, 239);
+}
+.btn>button:hover{
+  cursor: pointer;
+  background-color: rgba(237, 108, 108, 0.603);
+  font-size: 32px;
+  letter-spacing: 3px;
+}
+.footer{
+ display: flex;
+ /* display: grid; */
+ justify-content: center;
+ justify-content: space-around;
+ background-color: rgb(223, 183, 190);
+ margin-top: 48px;
+ padding: 48px;
+ font-family: sans-serif;
+}
+.list p{
+ margin-top: 20px;
+}
+
+
+/* Your existing styles */
+
+@media only screen and (max-width: 768px) {
+ .nv nav {
+   font-size: 30px; /* Adjust font size for smaller screens */
+ }
+
+ .logo img {
+   width: 80%; /* Make the logo smaller on smaller screens */
+   height: auto; /* Maintain aspect ratio */
+ }
+
+ .nv .text {
+   font-size: 18px; /* Adjust text size for smaller screens */
+ }
+
+ .input {
+   width: 80%; /* Adjust input width for smaller screens */
+ }
+
+ .card .crd img {
+   width: 100%; /* Make card images take full width on smaller screens */
+   height: auto; /* Maintain aspect ratio */
+ }
+
+ /* Add more responsive styles as needed */
+};
