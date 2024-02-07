@@ -1,17 +1,21 @@
 *{
- margin: 0%;
- padding: 0%;
+ margin: 0;
+ padding: 0;
 }
+/* body{
+  margin-right: 20px;
+  margin-left: 20px;
+} */
 .nv{
- background-image: url(https://wallpapercave.com/wp/wp7603919.jpg);
+ /* background-image: url(https://wallpapercave.com/wp/wp7603919.jpg); */
+ background-image: url(https://i.pinimg.com/originals/93/f4/a9/93f4a9c583b3e0b77f4bea0d99768e5d.jpg);
  width: 100%;
- height: 700px;
+ height: 800px;
 }
 .nv nav{
  display: flex;
- justify-content: center;
  justify-content: space-around;
- font-size: 44px;
+ font-size: 30px;
  color:pink
 }
 .nv nav .right{
@@ -25,27 +29,31 @@ nav p:hover{
   text-decoration: underline;
 }
 .logo img{
- width: 40%;
- height: 400px;
+ width: 30%;
+ /* height: 400px; */
+ height: auto;
  
 }
 .nv .logo{
  text-align: center;
 }
-.nv .text{
+.text{
  text-align: center;
  color: white;
- margin-top: 5px;
+ margin-top: 40px;
  font-size: 25px;
  text-shadow: 5px 5px 4px blue;
 }
-.nv .input{
- text-align: center;
- margin-top: 60px;
- 
-}
-.input>input{
+.input{
   width: 400px;
+  height: auto;
+  padding-left: 400px;
+  text-align: center;
+  margin-top: 80px;
+}
+.input > input{
+  /* width: 400px; */
+  width: 100%;
   height: 40px;
   border: none;
   outline: none;
@@ -53,24 +61,26 @@ nav p:hover{
   font-size: 20px;
   padding-left: 10px;
 }
-.input>input:hover{
+.input > input:hover{
   cursor: pointer;
   background-color: rgb(234, 90, 90);
   color: white;
 }
-.input>input:hover::placeholder{
+.input > input:hover::placeholder{
  color: #fff;
 }
 .card{
  display: flex;
- justify-content: center;
+ flex-wrap: wrap;
  text-align: center;
  justify-content: space-around;
- gap: 20px;
+ gap: 10px;
 }
-.card .crd img{
- width: 400px;
- height: 350px;
+.crd img{
+ /* width: 400px; */
+ /* height: 350px; */
+ width: 100%;
+ height: auto;
  border-radius: 6px;
  margin-top: 55px;
 }
@@ -87,33 +97,56 @@ nav p:hover{
 }
 .coll .rest{
  display: flex;
+ flex-wrap: wrap;
  margin: 0px;
  background-color: rgb(211, 96, 115);
 }
-.rest img{
+/* .rest img{
  width: 400px;
  height: 360px;
+ width: 100%;
+ height: auto;
  border-radius: 7px;
  padding-left: 50px;
  margin: 0px;
  margin-top: 40px;
+ display: grid;
+ grid-template-columns: (2, 1fr);
+} */
+.rest{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center align the images */
 }
-.rest>img{
-  border-radius: 10px;
+#image {
+  width: 100%;
+  height: auto;
+  padding-left: 40px;
+}
+#image>img{
+  
+  justify-content: space-between;
+  /* padding-left:40px ; */
+  width: 270px;
+  padding: 10px;
+  border-radius: 20px;
 }
 .app{
  display: flex;
- justify-content: center;
+ /* justify-content: center; */
  justify-content: space-around;
  background-color: rgb(233, 197, 203);
  margin-top: 60px;
 }
 .app img{
  width: 40%;
+ height: auto;
 }
 .app h1{
- margin-top: 190px;
+ margin-top: 180px;
+ /* margin-top: 100px; */
  font-size: 99px;
+ /* font-size: 2vw; */
  text-shadow: 3px 3px 4px blue;
 }
 .btn h1{
@@ -123,26 +156,28 @@ nav p:hover{
 }
 .btn button{
  width: 80%;
- height: 50px;
+ height: 70px;
  background-color: white;
  border: 1px solid gray;
  border-radius: 5px;
  margin-top: 22px;
- margin-left: 200px;
- font-size: 28px;
+ margin-left: 110px;
+ margin-right: auto;
+ font-size: 3vw;
  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  text-shadow: 3px 3px 8px rgb(239, 131, 239);
+ /* margin-left: auto; */
 }
-.btn>button:hover{
+.btn > button:hover{
   cursor: pointer;
   background-color: rgba(237, 108, 108, 0.603);
-  font-size: 32px;
+  /* font-size: 32px; */
+  font-size: 3.2vw;
   letter-spacing: 3px;
 }
 .footer{
  display: flex;
- /* display: grid; */
- justify-content: center;
+ flex-wrap: wrap;
  justify-content: space-around;
  background-color: rgb(223, 183, 190);
  margin-top: 48px;
@@ -153,31 +188,47 @@ nav p:hover{
  margin-top: 20px;
 }
 
+/* Mobile Phones */
+@media screen and (max-width: 767px) {
+  .nv {
+    height: 500px;
+  }
 
-/* Your existing styles */
+  .app h1 {
+    font-size: 6vw;
+  }
 
-@media only screen and (max-width: 768px) {
- .nv nav {
-   font-size: 30px; /* Adjust font size for smaller screens */
- }
+  .btn button {
+    font-size: 5vw;
+  }
+}
 
- .logo img {
-   width: 80%; /* Make the logo smaller on smaller screens */
-   height: auto; /* Maintain aspect ratio */
- }
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nv {
+    height: 500px;
+  }
 
- .nv .text {
-   font-size: 18px; /* Adjust text size for smaller screens */
- }
+  .app h1 {
+    font-size: 3vw;
+  }
 
- .input {
-   width: 80%; /* Adjust input width for smaller screens */
- }
+  .btn button {
+    font-size: 2.5vw;
+  }
+}
 
- .card .crd img {
-   width: 100%; /* Make card images take full width on smaller screens */
-   height: auto; /* Maintain aspect ratio */
- }
+/* Laptop */
+@media screen and (min-width: 1024px) {
+  .nv {
+    height: 400px;
+  }
 
- /* Add more responsive styles as needed */
-};
+  .app h1 {
+    font-size: 2.5vw;
+  }
+
+  .btn button {
+    font-size: 2vw;
+  }
+}
